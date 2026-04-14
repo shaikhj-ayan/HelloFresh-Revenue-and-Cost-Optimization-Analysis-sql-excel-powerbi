@@ -93,7 +93,7 @@ The Power BI dashboard presents revenue and cost optimization insights using:
 
 # 👤 Author and Contact
 
-**Name:** Your Name
+**Name:** Shaikh Ayan
 **Role:** Data Analysis Project
 **Tools:** SQL | Excel | Power BI
 **GitHub:** https://github.com/shaikhj-ayan
