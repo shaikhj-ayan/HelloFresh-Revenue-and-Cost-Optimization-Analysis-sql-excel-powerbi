@@ -1,4 +1,8 @@
--- 1. What is the total revenue per year?
+-- ============================================================
+--                  ANALYSIS QUERIES (SQL)
+-- ============================================================
+
+-- 1. How has total revenue changed across regions over time?
 
 SELECT 
     year,
@@ -8,7 +12,7 @@ FROM hellofresh.revenue_composition_and_contract
 GROUP BY year, region;
 
 
--- 2. Which region generates the highest revenue each year?
+-- 2. Which regions are driving or declining revenue growth year-over-year?
 
 WITH revenue_by_region AS (
     SELECT 
@@ -45,7 +49,7 @@ FROM revenue_by_growth
 ORDER BY region, year;
 
 
--- 4. What is AEBITDA by year?
+-- 3. How has AEBITDA evolved across regions over time?
 
 SELECT
     year,
@@ -56,7 +60,7 @@ WHERE metric = 'AEBITDA'
 AND period = 'FY'
 GROUP BY year, region;
 
--- 5. What is AEBITDA margin (% of revenue) by region and year?
+-- 4. How efficiently is the company converting revenue into profit (AEBITDA margin)?
 
 SELECT 
     year,
@@ -67,7 +71,7 @@ FROM hellofresh.revenue
 WHERE metric LIKE '%AEBITDA%'
 GROUP BY year, region, metric;
 
--- 6. What is AEBIT margin (% of revenue) by region and year?
+-- 5. How does operating profitability (AEBIT margin) vary by region?
 
 SELECT 
     year,
@@ -78,7 +82,7 @@ FROM hellofresh.revenue
 WHERE metric LIKE '%AEBIT%)'
 GROUP BY year, region, metric;
 
--- 7. What is the total AEBITDA and AEBIT for the overall period?
+-- 6. What is the overall profitability trend of the company?
 
 SELECT
     metric,
@@ -87,45 +91,7 @@ FROM hellofresh.revenue
 WHERE metric IN ('AEBITDA', 'AEBIT')
 GROUP BY metric;
 
--- 8. What is the contribution margin by region and year?
-
-SELECT
-    year,
-    region,
-    SUM(value) AS total_value
-FROM hellofresh.revenue
-WHERE metric = 'Contribution margin 1 (in MEUR)'
-AND period = 'FY'
-GROUP BY year, region;
-
--- 9. What is the revenue per meal kit by region and year?
-
-SELECT 
-	year,
-	region,
-	business_type,
-    Metric,
-	SUM(value) AS total_value  
-FROM hellofresh.financial_performance
-WHERE business_type = 'meal kits'
-AND metric = 'revenue'
-GROUP BY year, region, business_type;
-
--- 10.What is AEBITDA per meal kit by region and year?
-
-SELECT 
-	year,
-	region,
-	business_type,
-    Metric,
-	SUM(value) AS total_value  
-FROM hellofresh.financial_performance
-WHERE business_type = 'meal kits'
-AND metric = 'AEBITDA'
-GROUP BY year, region, business_type;
-
-
--- 11.What is the total number of orders by region and year?
+-- 7. How has order volume changed across regions over time?
 
 SELECT 
 	year,
@@ -137,7 +103,7 @@ AND period = 'FY'
 GROUP BY year, region;
 
 
--- 12.What is the average order value (revenue per order)?
+-- 8. Is revenue decline driven by fewer orders or lower spending per order?
 
 SELECT
     year,
@@ -155,7 +121,7 @@ GROUP BY 1, 2
 ORDER BY 1 DESC, 5 DESC;
 
 
--- 13.How much are cooking expenses per year?
+-- 9. How have key operational costs (procurement & cooking) changed year-over-year?
 
 SELECT 
 	metric,
@@ -165,7 +131,7 @@ FROM hellofresh.income_statement_consolidated
 WHERE metric = 'Procurement and cooking expenses';
 
 
--- 14.How much is marketing cost per year?
+-- 10. How has marketing spend evolved, and is it aligned with revenue performance?
 
 SELECT 
 	metric,
@@ -173,32 +139,4 @@ SELECT
 	`2023 (meur)`
 FROM hellofresh.income_statement_consolidated
 WHERE metric = 'Marketing expenses';
-
-
--- 15.How much working capital they have?
-
- SELECT 
-    SUM(value) AS working_capital
-FROM hellofresh.cash_and_working_capital
-WHERE metric = 'Operating working capital'
-AND period = 'FY';
-
-
--- 16.How much total inventories and ingredients used?
-
-SELECT
-`inventory category`,
-SUM(`31-Dec-2024 (MEUR)`) AS total_2024,
-SUM(`31-Dec-2023 (MEUR)`) AS total_2023
-FROM hellofresh.inventories
-WHERE `inventory category` IN ('total inventories', 'ingredients')
-GROUP BY `Inventory Category`;
-
--- 17 .How much total depreciation, amortization and impairment of consolidation? 
-
-SELECT 
-    SUM(`2024 (MEUR)`) AS depreciation_2024,
-    SUM(`2023 (MEUR)`) AS depreciation_2023
-FROM hellofresh.cash_flow_consolidated
-WHERE Metric = 'Depreciation, amortization and impairment';
 
