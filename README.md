@@ -21,16 +21,23 @@ Analysis of HelloFresh revenue and cost patterns to support profit optimization 
 This project analyzes HelloFresh revenue and cost data using publicly available company reports. The reports were converted from PDF to Excel, cleaned and standardized, then analyzed using SQL. The processed dataset was finally visualized in Power BI to identify profit drivers and cost optimization opportunities.
 
 
-# 💼 Business Problem
+## ❗ Business Problem
 
-* Inaccurate demand forecasting leads to food waste and higher inventory costs
-* Meal kit businesses require precise forecasting to control waste and stock levels
-* Profit margins are tight because operational and supply costs grow close to revenue
-* Regional demand and cost structures vary, so one common strategy is not effective everywhere
-* Strong competition from grocery delivery and ready-to-eat services increases customer switching
-* Customers are price sensitive and small price changes can increase cancellations
-* Sustainability requirements around packaging and delivery add additional operational costs
+HelloFresh is facing a **revenue decline despite improved operational efficiency and profitability**, indicating a disconnect between internal performance and customer demand.
 
+Key challenges identified:
+
+* Revenue is declining even as AEBITDA and margins improve
+* Order volume is decreasing, suggesting **weak customer retention and demand**
+* Product-related issues (especially in Ready-to-Eat segment) are impacting customer experience
+* Marketing spend remains high but is not translating into strong growth
+* Regional performance varies significantly, making a single strategy ineffective
+* External factors (currency impact, operational disruptions) are adding pressure
+
+👉 **Core Problem Statement:**
+**How can HelloFresh restore revenue growth by improving customer demand and retention while maintaining cost efficiency?**
+
+---
 
 # 🗂 Dataset
 
@@ -51,20 +58,19 @@ This project analyzes HelloFresh revenue and cost data using publicly available 
 * GitHub for project documentation and version control
 
 
-# ❓ Research Questions
+## 🔍 Research Questions & Key Findings
 
-* What is total revenue by year and region?
-* Which region has the highest revenue and fastest growth?
-* How do AEBITDA and AEBIT perform across years and regions?
-* What are AEBITDA and AEBIT margins by region?
-* What is the contribution margin trend over time?
-* How much revenue comes from the meal kit segment?
-* How many orders are placed per region each year?
-* What is the average order value by region and year?
-* How much is spent on procurement, cooking, and marketing?
-* What is the working capital position?
-* What is the value of inventories and ingredients?
-* What are yearly depreciation and amortization costs?
+### 📊 Research Questions
+
+* How has revenue changed across regions over time?
+* Which regions are driving or declining revenue growth?
+* How has AEBITDA and profitability evolved?
+* Are margins improving despite revenue decline?
+* How has order volume changed across regions?
+* Is revenue decline driven by fewer orders or lower spending?
+* How have operational and marketing costs changed?
+
+---
 
 
 # 🔍 Key Findings
@@ -79,6 +85,7 @@ This project analyzes HelloFresh revenue and cost data using publicly available 
 * Depreciation and amortization remain stable non cash expenses
 
 
+
 # 📊 Dashboard
 
 The Power BI dashboard presents revenue and cost optimization insights using:
@@ -90,6 +97,68 @@ The Power BI dashboard presents revenue and cost optimization insights using:
 * Region and year wise comparison visuals
 * Filters and slicers for interactive analysis
 
+## 🚀 Final Recommendations
+
+Based on the analysis, the following actions are recommended:
+
+### 1. Improve Customer Retention & Demand
+
+* Focus on improving product quality and consistency
+* Reduce churn by enhancing customer experience
+* Use order trends to identify and fix drop-off points
+
+---
+
+### 2. Optimize Marketing Efficiency
+
+* Shift budget towards high-performing regions
+* Reduce spend where customer acquisition is weak
+* Track ROI of campaigns using order and revenue data
+
+---
+
+### 3. Use Data-Driven Demand Forecasting
+
+* Leverage historical order and regional data
+* Align production with demand to reduce waste
+* Improve inventory planning and reduce excess stock
+
+---
+
+### 4. Region-Specific Strategy
+
+* Customize pricing, marketing, and operations per region
+* Focus on high-growth regions for expansion
+* Fix underperforming regions with targeted actions
+
+---
+
+### 5. Balance Cost Optimization with Growth
+
+* Continue controlling procurement and operational costs
+* Avoid over-optimization that impacts product quality
+* Maintain a balance between efficiency and customer value
+
+---
+
+### 6. Monitor Key Business Drivers
+
+* Track:
+
+  * Order volume
+  * Average order value
+  * Customer retention
+  * Cost-to-revenue ratio
+
+👉 Use dashboards to detect early signs of revenue decline
+
+---
+
+## 🧠 Final Insight
+
+> HelloFresh has successfully improved cost efficiency and profitability, but revenue decline is primarily driven by reduced order volume and weak customer retention, highlighting a demand-side problem rather than an operational one.
+
+---
 
 # 👤 Author and Contact
 
