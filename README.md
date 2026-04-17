@@ -93,7 +93,7 @@ The Power BI dashboard is designed to analyze revenue decline and cost efficienc
 ---
 
 ### 📉 Revenue Trend
-![Revenue](images/revenue_trend.png)
+![Revenue]([images/revenue_trend.png](https://github.com/shaikhj-ayan/HelloFresh-Revenue-and-Cost-Optimization-Analysis-sql-excel-powerbi/blob/master/image/order_trend.png)
 
 **Insight:**  
 Revenue shows a sharp decline after FY 2023, indicating a slowdown in overall business growth and highlighting a clear top-line issue.
