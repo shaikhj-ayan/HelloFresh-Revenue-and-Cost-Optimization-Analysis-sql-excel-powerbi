@@ -93,7 +93,7 @@ The Power BI dashboard is designed to analyze revenue decline and cost efficienc
 ---
 
 ### 📉 Revenue Trend
-![Revenue](https://github.com/shaikhj-ayan/HelloFresh-Revenue-and-Cost-Optimization-Analysis-sql-excel-powerbi/blob/master/image/order_trend.png)
+![Revenue](https://github.com/shaikhj-ayan/HelloFresh-Revenue-and-Cost-Optimization-Analysis-sql-excel-powerbi/blob/master/image/revenue_trend.png)
 
 **Insight:**  
 Revenue shows a sharp decline after FY 2023, indicating a slowdown in overall business growth and highlighting a clear top-line issue.
@@ -101,7 +101,7 @@ Revenue shows a sharp decline after FY 2023, indicating a slowdown in overall bu
 ---
 
 ### 🛒 Order Trend
-![Orders](images/order_trend.png)
+![Orders](https://github.com/shaikhj-ayan/HelloFresh-Revenue-and-Cost-Optimization-Analysis-sql-excel-powerbi/blob/master/image/order_trend.png)
 
 **Insight:**  
 Order volume and total meals have decreased significantly, showing that falling customer demand is the primary driver of revenue decline.
@@ -109,7 +109,7 @@ Order volume and total meals have decreased significantly, showing that falling 
 ---
 
 ### 🌍 Orders by Region
-![Orders by Region](images/order_by_region.png)
+![Orders by Region](https://github.com/shaikhj-ayan/HelloFresh-Revenue-and-Cost-Optimization-Analysis-sql-excel-powerbi/blob/master/image/order_by_region.png)
 
 **Insight:**  
 The Group contributes the highest volume, while International regions lag behind, indicating uneven regional performance and weaker demand in certain markets.
@@ -117,7 +117,7 @@ The Group contributes the highest volume, while International regions lag behind
 ---
 
 ### 📈 Region-wise AEBITDA
-![AEBITDA](images/aebitda_region.png)
+![AEBITDA](https://github.com/shaikhj-ayan/HelloFresh-Revenue-and-Cost-Optimization-Analysis-sql-excel-powerbi/blob/master/image/aebitda_region.png)
 
 **Insight:**  
 Profitability remains strong across regions despite declining revenue, showing effective cost control and operational efficiency.
