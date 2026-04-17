@@ -86,16 +86,47 @@ Key challenges identified:
 
 
 
-# 📊 Dashboard
+## 📊 Dashboard & Key Insights
 
-The Power BI dashboard presents revenue and cost optimization insights using:
+The Power BI dashboard is designed to analyze revenue decline and cost efficiency, focusing on demand, profitability, and regional performance.
 
-* Column charts for yearly and regional revenue comparison
-* Trend lines to show revenue and margin growth over time
-* Bar charts for cost category and regional performance
-* KPI cards for revenue, cost, margin, and order metrics
-* Region and year wise comparison visuals
-* Filters and slicers for interactive analysis
+---
+
+### 📉 Revenue Trend
+![Revenue](images/revenue_trend.png)
+
+**Insight:**  
+Revenue shows a sharp decline after FY 2023, indicating a slowdown in overall business growth and highlighting a clear top-line issue.
+
+---
+
+### 🛒 Order Trend
+![Orders](images/order_trend.png)
+
+**Insight:**  
+Order volume and total meals have decreased significantly, showing that falling customer demand is the primary driver of revenue decline.
+
+---
+
+### 🌍 Orders by Region
+![Orders by Region](images/order_by_region.png)
+
+**Insight:**  
+The Group contributes the highest volume, while International regions lag behind, indicating uneven regional performance and weaker demand in certain markets.
+
+---
+
+### 📈 Region-wise AEBITDA
+![AEBITDA](images/aebitda_region.png)
+
+**Insight:**  
+Profitability remains strong across regions despite declining revenue, showing effective cost control and operational efficiency.
+
+---
+
+## 🧠 Overall Dashboard Insight
+
+Revenue decline is primarily driven by reduced order volume rather than pricing, indicating weak customer demand and retention, while profitability improvements are driven by cost optimization.
 
 ## 🚀 Final Recommendations
 
