@@ -181,8 +181,6 @@ Based on the analysis, the following actions are recommended:
   * Customer retention
   * Cost-to-revenue ratio
 
-👉 Use dashboards to detect early signs of revenue decline
-
 ---
 
 ## 🧠 Final Insight
